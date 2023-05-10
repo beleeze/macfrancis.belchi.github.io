@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Macfrancis Belchi</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+      background-image: url("image1.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      margin: 0;
+      padding: 0;
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+      color: #ffffff;
+    }
+   .column {
+      max-width: 100%;
+    }
+    @media (min-width: 600px) {
+      .column {
+        max-width: 50%;
+      }
+    }
+    .content {
+      position: relative;
+      z-index: 1;
+      padding: 50px;
+      color: #ffffff;
+    }
+    .name {
+      font-weight: normal;
+      font-size: 5vw;
+      border: solid;
+      font-family: Georgia, serif;
+      color: rgb(122, 49, 9);
+      text-align: center;
+    }
+    @media only screen and (max-width: 768px) {
+    body {
+    background-size: contain;
+    background-position: center;
+        }
+    }
+    #fade-in {
+      opacity: 0;
+      animation: fade-in 5s forwards;
+    }
+
+    @keyframes fade-in {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    
+    .work {
+      font-weight: bold;
+      font-family: cursive;
+      color: rgb(255, 255, 255);
+    }
+    .title {
+      margin-top: 4vw;
+      font-family: Georgia, serif;
+      color: rgb(255, 255, 255);
+      text-align: center;
+    }
+    .introduction {
+      float: left;
+      text-align: center;
+      font-size: 2vw;
+      font-weight: normal;
+      margin-top: 1vw;
+      margin-bottom: 1vw;
+      padding: 1vw;
+      background-image: linear-gradient(to right, #ffffff, #ffffff);
+      color: rgb(255, 255, 255);
+      max-width: 100%;
+    }
+    .w3-bar-item {
+      padding: 1vw;
+      font-size: 3vw;
+    }
+    .mySlides img {
+      width: 100%;
+    }
+    .w3-display-container {
+      max-width: 100%;
+      height: auto;
+      margin: auto;
+    }
+    .w3-padding-32 {
+      padding: 1vw;
+    }
+    .w3-panel {
+      margin-top: 1vw;
+      color: rgb(255, 255, 255);
+    }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const name = document.querySelector('#fade-in');
+      const letters = name.textContent.split('');
+      name.textContent = '';
+
+      letters.forEach((letter, index) => {
+        const span = document.createElement('span');
+        span.textContent = letter;
+        span.style.animationDelay = `${index * 0.1}s`;
+        name.appendChild(span);
+      });
+    });
+  </script>
+</head>
+<body>
+    <!-- Links (sit on top) -->
+    <div class="w3-top">
+       <div class="w3-bar w3-large w3-white">
+         <a href="#" class="w3-bar-item w3-button">Home</a>
+         <a href="#about" class="w3-bar-item w3-button">Skills</a>
+         <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+       </div>
+    </div>
+    <div class="title">
+     <!--<h2>IT Analyst</h2>-->
+    </div>
+  <div class="w3-panel introduction" style="font-family: fangsong; color: rgb(13, 13, 13);">
+    <h4>INTRODUCTION</h4>
+  </div>
+
+  <!-- Content -->
+  <div class="w3-content" style="max-width:900px;margin-top:5px;margin-bottom:5px">
+    <div class="w3-panel introduction w3-grey">
+      
+    <div class="name">
+      <p id="fade-in">Macfrancis Belchi</p> 
+    </div>
+      <p>Enthusiastic and skilled computer systems specialist with a bachelor’s degree (Honors) in engineering. 
+        Fully committed to the exciting and evolving world of information technology and computer systems management. 
+        Possesses technical expertise in IT administration, cloud and on-premise servers and devices management, virtualization, 
+        Salesforce CRM, operating systems deployment, Microsoft and Amazon web cloud computing, Microsoft System Center Configuration Manager, 
+        Hypervisors, Identity access management applications and Ticketing systems.</p> 
+    </div>
+    <!-- Slideshow -->
+    <div class="w3-container">
+      <div class="w3-display-container mySlides">
+        <img src="az.png" style="max-width:auto; height:auto; margin: 10px auto 20px;">
+      </div>
+      
+      <div class="w3-display-container mySlides">
+        <<img src="ntk2.png" style="max-width:auto; height:auto; margin: 10px auto 20px;">
+      </div>
+      
+      <div class="w3-display-container mySlides">
+        <<img src="ntk5.png" style="max-width:auto; height:auto; margin: 10px auto 20px;">
+      </div>
+      
+      <div class="w3-display-container mySlides">
+        <img src="ntk6.png" style="max-width:auto; height:auto; margin: 10px auto 20px;">
+      </div>
+      
+      <div class="w3-display-container mySlides">
+        <img src="knt9.png" style="max-width:auto; height:auto; margin: 10px auto 20px;">
+      </div>
+      
+      <!-- Slideshow buttons -->
+      <div class="w3-container w3-black w3-padding w3-xlarge">
+        <button class="w3-button w3-hover-text-teal w3-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-hover-text-teal w3-right" onclick="plusDivs(1)">&#10095;</button>
+    
+        <div class="w3-center">
+          <button class="w3-button w3-square demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></button>
+          <button class="w3-button w3-square demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></button>
+          <button class="w3-button w3-square demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></button>
+        </div>
+      </div>
+    </div>
+    
+    
+    <!-- Grid -->
+<div class="w3-row w3-container">
+  <div class="w3-center w3-padding-64">
+    <span class="w3-xlarge w3-text-black w3-bottombar w3-border-dark-grey w3-padding-60">PROFICIENCIES</span>
+  </div>
+  <div class="w3-col l3 m6 s12 w3-light-grey w3-container w3-padding-16" style="font-family: fangsong; color: rgb(55, 58, 58);">
+    <h3>Documentation</h3>
+    <p>Sound knowledge of Microsoft M365 applications and of MS Excel and Access for Reporting</p>
+  </div>
+  <div class="w3-col l3 m6 s12 w3-orange w3-container w3-padding-16" style="font-family: fangsong; color: rgb(55, 58, 58);">
+    <h3>Data Management</h3>
+    <p>Versed in the query and modification of databases with use of a structured query language and PHP</p>
+  </div>
+  <div class="w3-col l3 m6 s12 w3-light-grey w3-container w3-padding-16" style="font-family: fangsong; color: rgb(58, 56, 55);">
+    <h3>Cloud & Hybrid</h3>
+    <p>Good knowledge of cloud infrastructure, on-premise and hybrid resource, user and devices management</p>
+  </div>
+  <div class="w3-col l3 m6 s12 w3-brown w3-container w3-padding-16" style="font-family: fangsong; color: rgb(58, 56, 55);">
+    <h3>Operating Systems</h3>
+    <p>Versatile with multiple operating systems, platforms, devices and programming languages including Linux</p>
+  </div>
+</div>
+
+  <!-- Grid -->
+  
+
+ <!-- Grid -->
+<div class="w3-container">
+  <img src="pic.jpg" style="width:100%; max-width: 400px; margin: 10px auto 20px; display: block;">
+</div>
+<!-- Grid -->
+<div class="w3-row-padding" id="about">
+  <div class="w3-center w3-padding-64">
+    <span class="w3-xlarge w3-text-black w3-bottombar w3-border-dark-grey w3-padding-60">CAPABILITIES</span>
+  </div>
+  <div class="w3-third w3-margin-bottom">
+    <div class="w3-card-4">
+      <img src="pic6.jpg" alt="John" style="width:100%">
+      <div class="w3-container w3-white">
+        <h3>Network and Device Troubleshoot</h3>
+        <p>Proficient in troubleshooting network and device issues to ensure smooth operation</p>
+      </div>
+      
+    </div>
+  </div>
+  <div class="w3-third w3-margin-bottom">
+    <div class="w3-card-4"> 
+      <img src="pic5.jpg" alt="Mike" style="width:100%">
+      <div class="w3-container w3-white">
+        <h3>Scripting and Automation</h3>
+        <p>Skilled in scripting and automation to streamline processes and increase efficiency</p>
+      </div>
+    </div>
+  </div>
+  <div class="w3-third w3-margin-bottom">
+    <div class="w3-card-4">
+      <img src="pic4.jpg" alt="Jane" style="width:100%">  
+        <div class="w3-container w3-white">
+          <h3>Reporting and Documentation</h3>
+          <p>Excellent with reporting techniques, applications and customer relations management</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div class="w3-center w3-text-black w3-padding-64" id="contact">
+    <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-60">CONTACT</span>
+  
+
+<!-- Footer -->
+
+<footer class="w3-container w3-padding-32 w3-light-grey w3-center">
+  <h4></h4>
+  <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <div>
+    <a href="https://www.linkedin.com/in/macfrancis-belchi-8125a28b" target="_blank">
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </a>
+          
+    </div>
+    <a href="mailto:macfrancis.belchi@outlook.com">
+    <i class="fa fa-mail-forward w3-hover-opacity"></i>
+    </a>
+    </div>
+    
+  
+</footer>
+
+
+<script>
+// Slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demodots");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+</body>
+</html>
+Footer
+© 2023 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+D
+</body>
+</html>

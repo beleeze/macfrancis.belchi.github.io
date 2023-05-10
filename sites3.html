@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>W3.CSS Template</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+
+@media (max-width: 576px) {
+    .w3-col {
+    width: 100%;
+    }
+    
+    .title {
+    font-size: 24px;
+    margin-top: 20px;
+    }
+    
+    .introduction {
+    margin-top: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 10px;
+    font-size: 16px;
+    }
+    
+    .skills {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+    
+    .skillbar {
+    height: 20px;
+    }
+    
+    .skillbar-inner {
+    line-height: 20px;
+    }
+    
+    .form {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+}
+
+</style>
+</head>
+<body>
+  <!-- Links (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-row w3-large w3-brown">
+      <div class="w3-col s3">
+        <a href="#" class="w3-button w3-block">Home</a>
+      </div>
+      <div class="w3-col s3">
+        <a href="#about" class="w3-button w3-block">Skills</a>
+      </div>
+      <div class="w3-col s3">
+        <a href="#contact" class="w3-button w3-block">Contact</a>
+      </div>
+    </div>
+  </div>
+  !-- Introduction -->
+  <div class="introduction">
+    <h2 class="name">John Doe</h2>
+    <h4 class="work">Web Developer</h4>
+    <p>
+      Hi, I'm John. I'm a web developer based in New York City with a passion
+      for building beautiful and functional websites. My expertise includes
+      HTML, CSS, JavaScript, and React. Please take a look at my work and
+      feel free to contact me if you have any questions.
+    </p>
+  </div>
+  
+  <!-- Skills -->
+  <div class="skills" id="about">
+    <h2 class="title">Skills</h2>
+    <div class="w3-row-padding">
+      <div class="w3-col l6 m6">
+        <div class="skillbar clearfix" data-percent="80%">
+          <div class="skillbar-title" style="background: #d5540f"
+            ><span>HTML5</span></div>
+          <div class="skillbar-bar" style="background: #e67e22"></div>
+          <div
+            class="skill-bar-percent"
+            style="background: #d5540f"
+          ></div>
+        </div>
+  
+        <div class="skillbar clearfix" data-percent="70%">
+          <div class="skillbar-title" style="background: #d5540f"
+            ><span>CSS3</span></div>
+          <div class="skillbar-bar" style="background: #e67e22"></div>
+          <div
+            class="skill-bar-percent"
+            style="background: #d5540f"
+          ></div>
+        </div>
+  
+        <div class="skillbar clearfix" data-percent="60%">
+          <div class="skillbar-title" style="background: #d5540f"
+            ><span>JavaScript</span></div>
+          <div class="skillbar-bar" style="background: #e67e22"></div>
+          <div
+            class="skill-bar-percent"
+            style="background: #d5540f"
+          ></div>
+        </div>
+      </div>
+      <div class="w3-col l6 m6">
+        <div class="skillbar clearfix" data-percent="80%">
+          <div class="skillbar-title" style="background: #d5540f"
+            ><span>React</span></div>
+          <div class="skillbar-bar" style="background: #e67e22"></div>
+          <div
+            class="skill-bar-percent"
+            style="background: #d5540f"
+          ></div>
+        </div>
+  
+        <div class="skillbar clearfix" data-percent="70%">
+          <div class="skillbar-title" style="background: #d5540f"
+            ><span>Node.js</span></div>
+            <div class="skillbar-bar" style="background: #f37021"></div>
+        </div>
+        </div>
+        <!-- Contact Section -->
+        <div class="w3-container w3-padding-64 w3-grey" id="contact">
+        <div class="w3-content w3-container w3-padding-64">
+        <h2 class="w3-center">CONTACT</h2>
+        <p class="w3-center w3-large">
+        Lets get in touch. Send me a message:
+        </p>
+        <div class="w3-row-padding" style="margin-top: 64px">
+        <div class="w3-half">
+        <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> New York, US</p>
+        <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +1 55555555</p>
+        <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+        <br />
+        <form action="/action_page.php" target="_blank">
+        <p>
+        <input
+                       class="w3-input w3-border"
+                       type="text"
+                       placeholder="Name"
+                       required
+                       name="Name"
+                     />
+        </p>
+        <p>
+        <input
+                       class="w3-input w3-border"
+                       type="text"
+                       placeholder="Email"
+                       required
+                       name="Email"
+                     />
+        </p>
+        <p>
+        <input
+                       class="w3-input w3-border"
+                       type="text"
+                       placeholder="Subject"
+                       required
+                       name="Subject"
+                     />
+        </p>
+        <p>
+        <input
+                       class="w3-input w3-border"
+                       type="text"
+                       placeholder="Message"
+                       required
+                       name="Message"
+                     />
+        </p>
+        <p>
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+        </p>
+        </form>
+        </div>
+        </div>
+        </div>
+        </div>
+        <!-- Footer Section -->
+        <footer class="w3-container w3-padding-64 w3-center w3-opacity">
+        <div class="w3-xlarge w3-padding-32">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+        <p>
+        Powered by
+        <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+        </p>
+        </footer>
+        
+          </body>
+        </html>
