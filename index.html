@@ -96,6 +96,29 @@
       padding: 1vw;
     }
     
+      .pc {
+  width: 500px;
+  height: 150px;
+  background-image: url('image02.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 0;
+  animation: bounce 5s infinite; /* Increase the duration of the animation to 3 seconds */
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(calc(100vw - 200px));
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+    
   </style>
   <script>
     window.addEventListener('DOMContentLoaded', () => {
@@ -173,7 +196,7 @@
         </div>
       </div>
     </div>
-    
+    <div class="pc"></div>
     
     <!-- Grid -->
 <div class="w3-row w3-container">
