@@ -121,7 +121,17 @@
   .paragraph {
     font-size: 20px;
   }
-  
+  @media (max-width: 768px) {
+  .writeup {
+    font-size: 2.5vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .writeup {
+    font-size: 4vw;
+  }
+}
   </style>
   <script>
     window.addEventListener('DOMContentLoaded', () => {
@@ -159,12 +169,13 @@
     <div class="name">
       <p id="fade-in">Macfrancis Belchi</p> 
     </div>
-    
+    <div class="writeup">
       <p class="paragraph"> Enthusiastic and skilled computer systems specialist with a bachelor’s degree (Honors) in engineering. 
         Fully committed to the exciting and evolving world of information technology and computer systems management. 
         Possesses technical expertise in IT administration, cloud and on-premise servers and devices management, virtualization, 
         Salesforce CRM, operating systems deployment, Microsoft and Amazon web cloud computing, Microsoft System Center Configuration Manager, 
         Hypervisors, Identity access management applications and Ticketing systems.</p> 
+    </div>  
     </div>
     </div>
   <div class="w3-content" style="max-width:900px;margin-top:5px;margin-bottom:5px">
